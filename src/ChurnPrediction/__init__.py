@@ -23,7 +23,7 @@ logging.basicConfig(
 )
 
 #creates a logger object named "ChurnPredictionLogger". This allows different parts of the code to use the same logger.
-logger = logging.getLogger("ChurnPredictionLogger")
+logger = logging.getLogger("ChurnPrediction")
 
 #This setup will log messages of level INFO and above both to the specified log file (running_logs.log inside the logs directory) 
 # and to the console. The messages will follow the defined format. The logger ChurnPredictionLogger can be used throughout 
