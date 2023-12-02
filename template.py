@@ -9,6 +9,7 @@ project_name = "ChurnPrediction"
 
 
 list_of_files = [
+    #needed for github actions
     ".github/workflows/.gitkeep",
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
