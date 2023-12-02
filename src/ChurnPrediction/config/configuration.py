@@ -1,15 +1,11 @@
 from src.ChurnPrediction.constants import *
 from src.ChurnPrediction.utils.common import read_yaml, create_directories
-from src.ChurnPrediction.entity.config_entity import (DataIngestionConfig, 
-                                                      DataValidationConfig, 
-                                                      DataTransformationConfig, 
-                                                      ModelTrainerConfig)
 
-#from src.ChurnPrediction.entity.config_entity import (DataIngestionConfig,
-#                                            DataValidationConfig,
-#                                            DataTransformationConfig,
-#                                            ModelTrainerConfig,
-#                                            ModelEvaluationConfig)
+from src.ChurnPrediction.entity.config_entity import (DataIngestionConfig,
+                                            DataValidationConfig,
+                                            DataTransformationConfig,
+                                            ModelTrainerConfig,
+                                            ModelEvaluationConfig)
 
 class ConfigurationManager:
     def __init__(
@@ -94,7 +90,7 @@ class ConfigurationManager:
         return model_trainer_config
     
 
-"""
+
 
     def get_model_evaluation_config(self) -> ModelEvaluationConfig:
         config = self.config.model_evaluation
@@ -110,10 +106,8 @@ class ConfigurationManager:
             all_params=params,
             metric_file_name = config.metric_file_name,
             target_column = schema.name,
-            mlflow_uri="https://dagshub.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow.mlflow",
+            mlflow_uri="https://dagshub.com/sriramsripada20s/Credit_Churn_Prediction_with_MLFlow.mlflow",
            
         )
 
         return model_evaluation_config
-
-"""

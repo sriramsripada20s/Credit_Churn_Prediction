@@ -7,7 +7,7 @@ from src.ChurnPrediction.pipeline.stage_01_data_ingestion import DataIngestionTr
 from src.ChurnPrediction.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
 from src.ChurnPrediction.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
 from src.ChurnPrediction.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
-#from ChurnPrediction.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline
+from src.ChurnPrediction.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline
 
 
 STAGE_NAME = "Data Ingestion stage"
@@ -57,7 +57,6 @@ except Exception as e:
         raise e
 
 
-"""
 
 STAGE_NAME = "Model evaluation stage"
 try:
@@ -68,6 +67,3 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
-
-        
-"""
