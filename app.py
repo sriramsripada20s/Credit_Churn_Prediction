@@ -1,8 +1,7 @@
 import streamlit as st
-import joblib
 import pandas as pd
-import pickle
-from sklearn.preprocessing import StandardScaler
+import joblib
+#from sklearn.preprocessing import StandardScaler
 
 # Load the model and other necessary preprocessing objects
 model = joblib.load('model.joblib')
